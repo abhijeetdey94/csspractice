@@ -1,0 +1,48 @@
+@media(max-width: 40rem) and (min-height: 60rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 25%;
+  }
+
+  #product-overview h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 40rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: 20% 25%;
+  }
+
+  #product-overview h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px brown;
+  }
+}
+
+@media(max-width: 40rem) {
+
+  .plan {
+    background: #ffd27f;
+    color: #4c3100;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+
+  .plan--highlighted {
+    background: #ffa500;
+    color: whitesmoke;
+  }
+
+  .key-feature {
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,8 @@
+@media (max-width: 40rem) {
+    .testimonial__image-container {
+        display: block;
+    }
+    .testimonial__info {
+        display: block;
+    }
+}

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "quarantine"
+    }
+  },
+  "defaultProject": "quarantine",
+  "cli": {
+    "analytics": "31a4af27-cb4f-467a-9328-2cdd907c1ade"
+  }
 }

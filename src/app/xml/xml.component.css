@@ -1,0 +1,71 @@
+.tree {
+    margin: 10px;
+    padding: 5px;
+}
+.node {
+    color: black;
+}
+
+.node span {
+    display: inline-block;
+}
+
+.tree__margin {
+    margin-left: 20px;
+}
+
+.ulist {
+    display: block;
+    margin: 0.75em 0;
+    padding: 0 1em;
+    list-style: none;
+}
+.list {
+    vertical-align: middle;
+    width: 30%;
+}
+.list:before { 
+    content: "";
+    width: 0;
+    height: 0;
+    display: inline-block;
+    margin: 0 2px;
+    border: 6px solid transparent;
+    border-left-color: black;
+    vertical-align: middle;
+}
+.open:before {
+    content: "";
+    width: 0;
+    height: 0;
+    display: inline-block;
+    margin: 0 2px;
+    border: 6px solid transparent;
+    border-top-color: black;
+    vertical-align: middle;
+}
+
+.remove-bullet:before {
+    content: "";
+    width: 0;
+    height: 0;
+    display: inline-block;
+    margin: 0 2px;
+    border: 6px solid transparent;
+}
+
+.end-tag {
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+
+.nested {
+    display: none;
+}
+.active {
+    display: inline-block;
+}
+
+.blue {
+    color: blue;
+}

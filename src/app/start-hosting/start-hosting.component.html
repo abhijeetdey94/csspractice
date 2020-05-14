@@ -1,0 +1,41 @@
+<div class="signup-page">
+  <h1 class="signup-title">Awesome! Let's dive right in!</h1>
+  <form [formGroup]="hostingForm" (ngSubmit)="onSubmit()" class="signup-form">
+    <div class="form-control-container">
+      <label for="title">Title</label>
+      <select formControlName="title" id="title">
+        <option value="mr">Mr.</option>
+        <option value="ms">Ms.</option>
+      </select>
+      <span class = "error-msg" *ngIf = "title.status === 'INVALID' && title.touched">{{getError(title.errors, 'Title')}}</span>
+    </div>
+    <div class="form-control-container">
+      <label for="first-name">First name</label>
+      <input formControlName="firstName" type="text" id="first-name">
+      <span class = "error-msg" *ngIf = "firstName.status === 'INVALID' && firstName.touched">{{getError(title.errors, 'First Name')}}</span>
+    </div>
+    <div class="form-control-container">
+      <label for="last-name">Last name</label>
+      <input formControlName="lastName" type="text" id="last-name">
+      <span class = "error-msg" *ngIf = "lastName.status === 'INVALID' && lastName.touched">{{getError(lastName.errors, 'Last Name')}}</span>
+    </div>
+    <div class="form-control-container">
+      <label for="email">E-Mail</label>
+      <input formControlName="email" type="email" id="email">
+      <span class = "error-msg" *ngIf = "email.status === 'INVALID' && email.touched">{{getError(email.errors, 'E-mail')}}</span>
+    </div>
+    <div class="form-control-container">
+      <label for="password">Password</label>
+      <input formControlName="password" type="password" id="password">
+      <span class = "error-msg" *ngIf = "password.status === 'INVALID' && password.touched">{{getError(password.errors)}}</span>
+    </div>
+    <input formControlName="agreeTerms" type="checkbox" id="agree-terms">
+    <label for="agree-terms">Agree to
+      <a href="#">Terms &amp; Conditions</a>
+    </label>
+    <button [disabled] = "hostingForm.status === 'INVALID'" type="submit" class="button">Sign Up</button>
+  </form>
+  <!-- <app-dummy [myAge] = "myAge">
+    <span>This is ng-content</span>
+  </app-dummy> -->
+</div>

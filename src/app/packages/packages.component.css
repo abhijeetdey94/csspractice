@@ -1,0 +1,106 @@
+.package {
+  width: 80%;
+  margin: 1rem 0;
+  border: 4px solid rgb(240, 145, 50);
+  border-left: none;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+}
+
+.package a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 2rem;
+}
+
+.package__title {
+  color: lightcoral;
+}
+
+.package__badge {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  right: 5.5%;
+  color: #990000;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 2px solid #990000;
+  border-radius: 4px;
+  width: 15.6rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.package__subtitle {
+  color: #884f35;
+}
+
+.package__info {
+  padding: 1rem;
+  border: 1px solid #cc7750;
+  font-size: 1.2rem;
+  color: #b56a47;
+  background-color: white;
+}
+
+#free {
+  background-color: whitesmoke;
+  float: right;
+  border: 4px solid rgb(240, 145, 50);
+  border-right: none;
+  text-align: right;
+}
+
+#plus {
+  background-color: #ffffcc;
+  margin-top: 5.1rem;
+}
+
+#premium {
+  background-color: #ff9d2ccb;
+}
+
+#premium .package__title {
+  color: rgb(238, 77, 77);
+}
+
+#premium .package__subtitle {
+  color: #884f35b4;
+}
+
+.package:hover,
+.package:active {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-color: #6554ff91;
+}
+
+#premium:hover,
+#premium:active {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-color: #6554ff91;
+}
+
+#free:hover,
+#free:active {
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-color: #6554ff91;
+}
+
+@media (min-width: 1500px) {
+  .package-main {
+    margin: 3rem auto;
+    max-width: 1500px;
+  }
+
+  .package {
+    border-left: 4px solid rgb(240, 145, 50);
+  }
+
+  #free {
+    border-right: 4px solid rgb(240, 145, 50);
+  }
+}

@@ -1,0 +1,5 @@
+@media (max-width: 40rem) {
+    #plus .package__title {
+        margin-top: 3.1rem;
+    } 
+}
