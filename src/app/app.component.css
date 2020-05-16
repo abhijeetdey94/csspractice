@@ -21,39 +21,41 @@
   top: 0;
   left: 0;
   z-index: 2;
-  /* display: none; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* ----------- SAME ------------- */
 .main-header>div {
-  display: inline-block;
   width: 10rem;
   overflow: hidden;
   padding-left: 0.625rem;
-  vertical-align: middle;
 }
 
 /* .main-header__title {
-    display: inline-block;
     width: 90px;
     overflow: hidden;
     padding-left: 10px;
-    vertical-align: middle;
 } */
 /* ----------- SAME ------------- */
 /* BRAND */
+.main-header__title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
 .main-header__title>i {
   content: url(../assets/svg/logo.svg);
-  display: inline-block;
   width: 40%;
   height: 3.125rem;
-  vertical-align: middle;
 }
 
 /* #BRAND */
 .main-header__brand {
-  display: inline-block;
-  vertical-align: middle;
   background-color: rgb(240, 145, 50);
   width: 60%;
   padding: 0px;
@@ -72,22 +74,16 @@
 .main-header ul {
   margin-bottom: 0px;
 }
-
-.main-nav {
-  display: inline-block;
-  text-align: right;
-  vertical-align: middle;
-  width: calc(100% - 210px);
-}
-
 .main-nav__items {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .main-nav__item {
-  display: inline-block;
   margin-left: 1rem;
 }
 

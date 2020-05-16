@@ -9,6 +9,7 @@ import { StackingComponent } from './stacking/stacking.component';
 import { XmlComponent } from './xml/xml.component';
 import { CustomersComponent } from './customers/customers.component';
 import { StartHostingComponent } from './start-hosting/start-hosting.component';
+import { FlexComponent } from './flex/flex.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'selectors', component: SelectorsComponent},
   {path: 'stacking', component: StackingComponent},
   {path: 'xml', component: XmlComponent},
+  {path: 'flex', component: FlexComponent},
 ];
 
 const routeOptions: ExtraOptions = {

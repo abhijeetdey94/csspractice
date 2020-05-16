@@ -1,0 +1,74 @@
+.flex-page {
+  margin-top: 5.6rem;
+  padding: 10px;
+}
+
+.flex-container {
+  background: white;
+  padding: 10px;
+  border: 5px solid black;
+  height: 1300px;
+  display: flex;
+  /* flex-flow: row wrap;*/
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*cross-axis */
+  /* align-items: center;*/
+  /*main-axis*/
+  justify-content: flex-start; 
+}
+
+.item-1 {
+  background: #ff7300;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+}
+
+.item-2 {
+  background: #ff9640;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  width: 250px;
+  font-size: 1.8rem;
+}
+
+.item-3 {
+  background: #ff9640;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  height: 250px;
+}
+
+.item-4 {
+  background: #f5c096;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.item-5 {
+  background: #d3c0b1;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  width: 350px;
+}
+
+.item-6 {
+  background: #d3c0b1;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  width: 350px;
+}

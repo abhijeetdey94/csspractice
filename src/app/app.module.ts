@@ -15,6 +15,8 @@ import { CustomersComponent } from './customers/customers.component';
 import { StartHostingComponent } from './start-hosting/start-hosting.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DummyComponent } from './dummy/dummy.component';
+import { FlexComponent } from './flex/flex.component';
+import { ShortenPipe } from './custom-pipe/shorten.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { DummyComponent } from './dummy/dummy.component';
     XmlComponent,
     CustomersComponent,
     StartHostingComponent,
-    DummyComponent
+    DummyComponent,
+    FlexComponent,
+    ShortenPipe
   ],
   imports: [
     BrowserModule,
