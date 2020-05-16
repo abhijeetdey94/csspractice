@@ -11,7 +11,7 @@
   display: flex;
   /* flex-flow: row wrap;*/
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   /*cross-axis */
   /* align-items: center;*/
   /*main-axis*/

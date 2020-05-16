@@ -113,12 +113,11 @@
   }
 
   /* #LINKS OF MOBILE NAVIGATION BAR */
+  /* FOOTER*/
+  .main-footer__link {
+    margin: 0.4rem 1rem;
+  }
+  /* #FOOTER*/
 }
 
-@media (max-width: 40rem) {
-  .main-footer__link {
-    display: block;
-    width: 100%;
-    margin: 0.7rem 0;
-  }
-}
+
