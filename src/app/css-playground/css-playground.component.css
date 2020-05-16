@@ -2,3 +2,8 @@
     /* content:url(../../assets/svg/logo.svg); */
     content: 'My text here'
 }
+
+.css-practice {
+    margin-top: 5.6rem;
+    padding: 10px;
+}

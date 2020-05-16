@@ -26,14 +26,17 @@
   .plan {
     background: #ffd27f;
     color: #4c3100;
-    text-align: center;
     padding: 1rem;
     margin: 0.5rem 0;
     width: 100%;
     border: 2px solid transparent;
     border-radius: 8px;
-    vertical-align: middle;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
   }
 
   .plan--highlighted {
