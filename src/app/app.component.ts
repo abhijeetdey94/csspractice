@@ -38,7 +38,7 @@ export class AppComponent implements AfterViewInit {
     this.renderer.setStyle(this.backdrop.nativeElement, 'display', val);
   }
   toggleMobNav(toggle: boolean): void {
-    const val = toggle ? 'block' : 'none';
+    const val = toggle ? 'flex' : 'none';
     this.renderer.setStyle(this.mobNav.nativeElement, 'display', val);
     if (val === 'none') { this.toggleBackdrop(false); }
   }

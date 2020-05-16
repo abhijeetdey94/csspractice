@@ -25,7 +25,6 @@
     cursor: pointer;
     padding-top: 0;
     padding-bottom: 0;
-    vertical-align: middle;
   }
 
   .toggle-button:focus {
@@ -58,7 +57,9 @@
     top: 0;
     left: 0;
     background: rgba(104, 62, 20, 0.582);
-    ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     width: 80%;
     height: 100vh;
   }
@@ -67,9 +68,13 @@
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
+    margin: 0 auto;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .mobile-nav__item {

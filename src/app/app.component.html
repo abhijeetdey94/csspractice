@@ -2,14 +2,16 @@
 <div class="modal" [style.display]="showModal ? '': 'none'">
   <h1 class="modal__title">Do you want to continue?</h1>
   <div class="modal__actions">
-    <a routerLink="/start-hosting" (click)="showModal = false;toggleBackdrop(false);toggleMobNav(false);" class="modal__action">Yes!</a>
-    <button class="modal__action modal__action--negative" type="button" (click)="showModal = false;toggleBackdrop(false);toggleMobNav(false);">No!</button>
+    <a routerLink="/start-hosting" (click)="showModal = false;toggleBackdrop(false);toggleMobNav(false);"
+      class="modal__action">Yes!</a>
+    <button class="modal__action modal__action--negative" type="button"
+      (click)="showModal = false;toggleBackdrop(false);toggleMobNav(false);">No!</button>
   </div>
 </div>
 <div class="background"></div>
 <header class="main-header">
   <button class="toggle-button" #mobNavToggle>
-    <svg class = "hamburger" viewBox="0 10 100 80" width="40" height="40">
+    <svg class="hamburger" viewBox="0 10 100 80" width="40" height="40">
       <rect width="100" height="10"></rect>
       <rect y="30" width="100" height="10"></rect>
       <rect y="60" width="100" height="10"></rect>
@@ -45,13 +47,15 @@
 </header>
 <!-- MOBILE NAVIGATION -->
 <nav class="mobile-nav" #mobNav>
-  <div><span class = "close-nav" (click) = "toggleMobNav(false)">X</span></div>
+  <div>
+    <span class="close-nav" (click)="toggleMobNav(false)">X</span>
+  </div>
   <ul class="mobile-nav__items">
     <li class="mobile-nav__item">
-      <a routerLink="/packages" (click) = "toggleMobNav(false);">Packages</a>
+      <a routerLink="/packages" (click)="toggleMobNav(false);">Packages</a>
     </li>
     <li class="mobile-nav__item">
-      <a routerLink="/customers" (click) = "toggleMobNav(false);">Customers</a>
+      <a routerLink="/customers" (click)="toggleMobNav(false);">Customers</a>
     </li>
     <li class="mobile-nav__item mobile-nav__item--cta">
       <a (click)="showModal = true;toggleBackdrop(true);">Start Hosting</a>
