@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DummyComponent } from './dummy/dummy.component';
 import { FlexComponent } from './flex/flex.component';
 import { ShortenPipe } from './custom-pipe/shorten.pipe';
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ShortenPipe } from './custom-pipe/shorten.pipe';
     StartHostingComponent,
     DummyComponent,
     FlexComponent,
-    ShortenPipe
+    ShortenPipe,
+    GridComponent
   ],
   imports: [
     BrowserModule,

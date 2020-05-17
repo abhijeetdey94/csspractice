@@ -10,6 +10,7 @@ import { XmlComponent } from './xml/xml.component';
 import { CustomersComponent } from './customers/customers.component';
 import { StartHostingComponent } from './start-hosting/start-hosting.component';
 import { FlexComponent } from './flex/flex.component';
+import { GridComponent } from './grid/grid.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'stacking', component: StackingComponent},
   {path: 'xml', component: XmlComponent},
   {path: 'flex', component: FlexComponent},
+  {path: 'grid', component: GridComponent},
 ];
 
 const routeOptions: ExtraOptions = {
